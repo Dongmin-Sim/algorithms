@@ -12,7 +12,9 @@
 
 1.3 [촌수계산](https://github.com/Dongmin-Sim/algorithms/blob/main/DFS:BFS/DFS_BJ_2644.ipynb)(백준 온라인 저지:2644)  
 
-1.4 [DFS와 BFS](https://github.com/Dongmin-Sim/algorithms/blob/main/DFS:BFS/DFS_BJ_1260.ipynb)(백준 온라인 저지:1260)
+1.4 [DFS와 BFS](https://github.com/Dongmin-Sim/algorithms/blob/main/DFS:BFS/DFS_BJ_1260.ipynb)(백준 온라인 저지:1260)  
+
+1.5 [안전영역](https://github.com/Dongmin-Sim/algorithms/blob/main/DFS:BFS/DFS_BJ_2468.ipynb)(백준 온라인 저지:2468)
 
 
 
