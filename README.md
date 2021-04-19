@@ -22,7 +22,9 @@
 
 1. [퇴사]()(백준 온라인 저지:14501)
 
+### [구현](https://github.com/Dongmin-Sim/algorithms/tree/main/%EA%B5%AC%ED%98%84)
 
+1.1 [뉴스 클러스터링](https://github.com/Dongmin-Sim/algorithms/blob/main/%EA%B5%AC%ED%98%84/KAKAO_2018_NewsClustering.ipynb)(카카오 2018 블라인드 채용)
 
 
 
