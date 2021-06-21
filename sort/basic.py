@@ -71,3 +71,29 @@ def quick_sort(array):
 
 print('퀵 정렬2 : ', quick_sort(array))
 
+
+# 두 배열의 원소 교체 문제
+n, k = 5, 3
+
+a = [1, 2, 5, 4, 3]
+b = [5, 5, 6, 6, 5]
+
+def quick_sort(array):
+    if len(array) <= 1:
+        return array
+    pivot, tail = array[0], array[1:]
+
+    left_side = [x for x in tail if x <= pivot]
+    right_side = [x for x in tail if x > pivot]
+
+    return quick_sort(left_side) + [pivot] + quick_sort(right_side)
+
+a, b = quick_sort(a), quick_sort(b)
+
+for i in range(k):
+    if a[i] < b[-1 - i]:
+        a[i], b[-1 - i] = b[-1 - i], a[i]
+    else:
+        break
+
+print(sum(a))
