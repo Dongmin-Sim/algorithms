@@ -123,7 +123,7 @@ for idx in range(n):
 queue.append((idx, array[idx]))
 ```
 
-> ⎿ 구간 내에서 최대, 최솟값 찾기 (deque 사용)
+> ⎿ 구간 내에서 최대, 최솟값 찾기 (deque 사용)  
 > 		⎿ 백준 - 최솟값 찾기(11003) [문제 바로가기](https://www.acmicpc.net/problem/11003)  / [풀이]()
 
 > ​		⎿ 백준 - 최솟값 찾기(11003) [문제 바로가기](https://www.acmicpc.net/problem/11003)  / [풀이]()
