@@ -80,7 +80,8 @@
 ### [투 포인터]()
 
 ⎿ 배열에서 어떠한 수, 혹은 이상이 되는 부분합의 길이 구하기
-		⎿ 백준 - 부분합 구하기(1806) [문제 바로가기](https://www.acmicpc.net/problem/1806) / [풀이]()
+
+​		⎿ 백준 - 부분합 구하기(1806) [문제 바로가기](https://www.acmicpc.net/problem/1806) / [풀이]()
 
 ```python
 count = 0
@@ -122,9 +123,13 @@ for idx in range(n):
 queue.append((idx, array[idx]))
 ```
 
-⎿ 구간 내에서 최대, 최솟값 찾기 (deque 사용)
-		⎿ 백준 - 최솟값 찾기(11003) [문제 바로가기](https://www.acmicpc.net/problem/11003)  / [풀이]()
-		⎿ 프로그래머스 - 징검다리 구하기 [문제 바로가기](https://programmers.co.kr/learn/courses/30/lessons/64062) / [풀이]()
+> ⎿ 구간 내에서 최대, 최솟값 찾기 (deque 사용)
+> 		⎿ 백준 - 최솟값 찾기(11003) [문제 바로가기](https://www.acmicpc.net/problem/11003)  / [풀이]()
+
+> ​		⎿ 백준 - 최솟값 찾기(11003) [문제 바로가기](https://www.acmicpc.net/problem/11003)  / [풀이]()
+
+> ​		⎿ 프로그래머스 - 징검다리 구하기 [문제 바로가기](https://programmers.co.kr/learn/courses/30/lessons/64062) / [풀이]()
 
 ⎿구간 내에서 종류 구하기
-		⎿ 백준 - 회전초밥(2531) [문제 바로가기](https://www.acmicpc.net/problem/2531) / [풀이]()
+
+​		⎿ 백준 - 회전초밥(2531) [문제 바로가기](https://www.acmicpc.net/problem/2531) / [풀이]()
