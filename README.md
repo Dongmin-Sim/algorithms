@@ -57,19 +57,15 @@
 
 ### [이진탐색 문제풀이](https://github.com/Dongmin-Sim/algorithms/tree/main/binary_search) 
 
-⎿ 배열에서 특정원소의 유무 구하기
+* 배열에서 특정원소의 유무 구하기
 
-⎿ 조건을 만족하는 특정 기준점을 찾기
+* 조건을 만족하는 특정 기준점을 찾기  
+  		⎿ 백준 - 나무자르기(2805) [문제 바로가기](https://www.acmicpc.net/problem/2805) / [풀이]()  
+  		⎿ 백준 - 랜선자르기(1654) [문제 바로가기](https://www.acmicpc.net/problem/1654) / [풀이]()
 
-​		⎿ 백준 - 나무자르기(2805) [문제 바로가기](https://www.acmicpc.net/problem/2805) / [풀이]()
-
-​		⎿ 백준 - 랜선자르기(1654) [문제 바로가기](https://www.acmicpc.net/problem/1654) / [풀이]()
-
-⎿ 배열에서 특정원소의 개수 구하기
-
-​	⎿ 백준 - 숫자카드2(10816) [문제 바로가기](https://www.acmicpc.net/problem/10816) / [풀이]()
-
-​	⎿ 이코테 - Q27  [풀이](https://github.com/Dongmin-Sim/algorithms/blob/main/binary_search/%EC%A0%95%EB%A0%AC%EB%90%9C_%EB%B0%B0%EC%97%B4%EC%97%90%EC%84%9C_%ED%8A%B9%EC%A0%95_%EC%88%98%EC%9D%98_%EA%B0%9C%EC%88%98%EA%B5%AC%ED%95%98%EA%B8%B0.py)
+* 배열에서 특정원소의 개수 구하기  
+  		⎿ 백준 - 숫자카드2(10816) [문제 바로가기](https://www.acmicpc.net/problem/10816) / [풀이]()  
+  		⎿ 이코테 - Q27  [풀이](https://github.com/Dongmin-Sim/algorithms/blob/main/binary_search/%EC%A0%95%EB%A0%AC%EB%90%9C_%EB%B0%B0%EC%97%B4%EC%97%90%EC%84%9C_%ED%8A%B9%EC%A0%95_%EC%88%98%EC%9D%98_%EA%B0%9C%EC%88%98%EA%B5%AC%ED%95%98%EA%B8%B0.py)
 
 
 
@@ -79,9 +75,8 @@
 
 ### [투 포인터]()
 
-⎿ 배열에서 어떠한 수, 혹은 이상이 되는 부분합의 길이 구하기
-
-​		⎿ 백준 - 부분합 구하기(1806) [문제 바로가기](https://www.acmicpc.net/problem/1806) / [풀이]()
+* 배열에서 어떠한 수, 혹은 이상이 되는 부분합의 길이 구하기   
+  		⎿ 백준 - 부분합 구하기(1806) [문제 바로가기](https://www.acmicpc.net/problem/1806) / [풀이]()
 
 ```python
 count = 0
