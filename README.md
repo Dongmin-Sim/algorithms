@@ -47,13 +47,24 @@
 
 ### [구현 문제풀이](https://github.com/Dongmin-Sim/algorithms/tree/main/%EA%B5%AC%ED%98%84)
 
-1.  [뉴스 클러스터링](https://github.com/Dongmin-Sim/algorithms/blob/main/%EA%B5%AC%ED%98%84/KAKAO_2018_NewsClustering.ipynb)(카카오 2018 블라인드 채용)
+1. [뉴스 클러스터링](https://github.com/Dongmin-Sim/algorithms/blob/main/%EA%B5%AC%ED%98%84/KAKAO_2018_NewsClustering.ipynb)(카카오 2018 블라인드 채용)
 2. [크레인 인형뽁기 게임](https://github.com/Dongmin-Sim/algorithms/blob/main/%EA%B5%AC%ED%98%84/KAKAO_2019_Crane.ipynb)(카카오 2019 겨울 인턴쉽)
 3. [뱀](https://github.com/Dongmin-Sim/algorithms/blob/main/%EA%B5%AC%ED%98%84/%EA%B5%AC%ED%98%84_BJ_3190.ipynb)(백준 온라인 저지:3190)
 
 ---
 
+### [정렬 문제풀이](https://github.com/Dongmin-Sim/algorithms/tree/main/sort) 
 
+* 정렬 라이브러리로 푸는 문제   
+
+  		
+* 정렬 알고리즘의 원리 사용하여 푸는 문제     
+
+  		
+* 기존 정렬 알고리즘 변형, 더 빠른 정렬 알고리즘으로 푸는 문제  
+
+
+---
 
 ### [이진탐색 문제풀이](https://github.com/Dongmin-Sim/algorithms/tree/main/binary_search) 
 
