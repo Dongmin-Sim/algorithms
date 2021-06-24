@@ -6,7 +6,6 @@ for i in range(len(array)):
     for j in range(i + 1, len(array)):
         if array[min_index] > array[j]:
             min_index = j
-
     array[i], array[min_index] = array[min_index], array[i]
 
 print('선택 정렬 : ', array)
@@ -70,6 +69,21 @@ def quick_sort(array):
     return quick_sort(left_side) + [pivot] + quick_sort(right_side)
 
 print('퀵 정렬2 : ', quick_sort(array))
+
+# 계수정렬
+array = [7, 5, 9, 0, 3, 1, 6, 2, 9, 1, 4, 8, 0, 5, 2]
+count = [0] * (max(array) + 1)
+
+for i in array:
+    count[i] += 1
+
+for i in range(len(count)):
+    for _ in range(count[i]):
+        print(i, end=' ')
+
+print(' ')
+
+
 
 
 # 두 배열의 원소 교체 문제
