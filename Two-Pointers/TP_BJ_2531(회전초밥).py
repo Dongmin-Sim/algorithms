@@ -8,31 +8,21 @@ first = time.time()
 n, d, k, c = 8, 30, 4, 30
 table = [7, 9, 7, 30, 2, 7, 9, 25]
 
-pos_var = []
 temp = deque()
-set_count = 0
+answer = 0
 
 for idx in range(n-1, -k-1, -1):
-    if len(temp) > k:
-        temp.popleft()
+    if c in temp:
+        answer = max(answer, len(set(temp)))
+    else:
+        answer = max(answer, len(set(temp)) + 1)
 
-    # k 보다 작은 가지수가 있음
-    if len(temp) == k and set_count <= len(set(temp)):
-        set_count = len(set(temp))
-        pos_var.append(set(temp))
+    # 윈도우 길이 k이상 일 경우 맨 앞 요소 pop
+    while temp and len(temp) >= k:
+        temp.popleft()
 
     temp.append(table[idx])
 
-
-answer = 0
-
-for pos in pos_var:
-    if c in pos and answer < len(pos):
-        answer = len(pos)
-    else:
-        answer = len(pos) + 1
-
-print(len(pos_var), pos_var)
 print(answer)
 
 
