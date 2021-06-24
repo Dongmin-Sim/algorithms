@@ -40,6 +40,31 @@ def quick_sort(array):
 
 print(quick_sort(array))
 
+array = [7, 5, 9, 0, 3, 1, 6, 2, 4, 8]
+
+def quick_sort_basic(array, start, end):
+    if start >= end:
+        return
+
+    pivot = array[0]
+    left, right = start + 1, end
+
+    while left <= right:
+        while left <= end and array[left] <= array[pivot]:
+            left += 1
+        while right >= start and array[right] >= array[pivot]:
+            right -= 1
+        if left > right:
+            array[pivot], array[right] = array[right], array[pivot]
+        else:
+            array[left], array[right] = array[right], array[left]
+    quick_sort_basic(array, start, right - 1)
+    quick_sort_basic(array, right + 1, end)
+
+# quick_sort_basic(array, 0, len(array) - 1)
+# print(array)
+
+
 #----
 print('hello')
 n = 8
@@ -47,3 +72,11 @@ k = 3
 ans = [7, 9, 7, 30, 2, 7, 9, 25]
 for i in range(n-1, -k, -1):
     print(i, ans[i])
+
+seq = [(1, 2, 3), (4, 5, 6), (1, 1, 2)]
+
+seq.sort(key=lambda x: (-x[1], x[2], x[0]))
+print(seq)
+
+
+seq = [1, 2, 3, 4, 5, 6, 7]
