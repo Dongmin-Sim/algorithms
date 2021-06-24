@@ -56,7 +56,8 @@
 ### [정렬 문제풀이](https://github.com/Dongmin-Sim/algorithms/tree/main/sort) 
 
 * 정렬 라이브러리로 푸는 문제   
-
+  		⎿ 백준 - 국영수(10825) [문제 바로가기](https://www.acmicpc.net/problem/10825) / [풀이]()  
+  		⎿ 백준 - 안테나(18310) [문제 바로가기](https://www.acmicpc.net/problem/18310) / [풀이]()
   		
 * 정렬 알고리즘의 원리 사용하여 푸는 문제     
 
