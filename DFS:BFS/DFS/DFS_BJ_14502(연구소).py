@@ -1,27 +1,22 @@
 import sys
-from itertools import combinations
 
 input = sys.stdin.readline
+n, m = map(int, input().split())
+labs = [list(map(int, input().split())) for _ in range(n)]
 
-# n, m = map(int, input().split())
-n, m = 7, 7
-
-
-
-# labs = [list(map(int, input().split())) for _ in range(n)]
-labs = [[2, 0, 0, 0, 1, 1, 0],
-        [0, 0, 1, 0, 1, 2, 0],
-        [0, 1, 1, 0, 1, 0, 0],
-        [0, 1, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 1, 1],
-        [0, 1, 0, 0, 0, 0, 0],
-        [0, 1, 0, 0, 0, 0, 0]]
+# 테스트 케이스
+# n, m = 7, 7
+# labs = [[2, 0, 0, 0, 1, 1, 0],
+#         [0, 0, 1, 0, 1, 2, 0],
+#         [0, 1, 1, 0, 1, 0, 0],
+#         [0, 1, 0, 0, 0, 0, 0],
+#         [0, 0, 0, 0, 0, 1, 1],
+#         [0, 1, 0, 0, 0, 0, 0],
+#         [0, 1, 0, 0, 0, 0, 0]]
 
 temp = [[0] * m for _ in range(n)]
-# dx = [-1, 1, 0, 0]
-# dy = [0, 0, -1, 1]
-d = (-1, 0), (1, 0), (0, -1), (0, 1)
 
+d = (-1, 0), (1, 0), (0, -1), (0, 1)
 
 score = 0
 
@@ -30,13 +25,13 @@ score = 0
 def virus_dfs(x, y):
     for dx, dy in d:
         nx, ny = x + dx, y + dy
-        if nx >= 0 and nx < n and ny >= 0 and ny < m:
+        if 0 <= nx < n and 0 <= ny < m:
             if temp[nx][ny] == 0:
                 temp[nx][ny] = 2
                 virus_dfs(nx, ny)
 
 
-# 안전영역 개
+# 안전영역 계산
 def safty_zone():
     zone = 0
     for i in range(n):
@@ -46,7 +41,7 @@ def safty_zone():
     return zone
 
 
-# 벽세우기
+# 벽 세우기 & 답 구하기
 def solution(count):
     global score
 
@@ -69,6 +64,7 @@ def solution(count):
                 solution(count)
                 labs[i][j] = 0
                 count -= 1
+
 
 solution(0)
 print(score)
