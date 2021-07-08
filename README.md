@@ -2,7 +2,10 @@
 
 알고리즘 분류에 맞게 문제풀이 하는 알고리즘 study repository, 개인 공부용입니다.
 
+### [Greedy]()
 
+
+---
 
 ### [DFS/BFS](https://github.com/Dongmin-Sim/algorithms/tree/main/DFS:BFS)
 
