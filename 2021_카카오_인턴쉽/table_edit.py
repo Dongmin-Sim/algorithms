@@ -1,61 +1,74 @@
-from collections import deque
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.prev = None
+        self.next = None
 
 
-def cmd_trans(cmd, selected, arr):
-    direction, num = cmd.split()
-    num = int(num)
+class Linkedlist:
+    def __init__(self):
+        dummy = Node('dummy')
+        self.head = dummy
+        self.tail = dummy
 
-    idx = selected
-    while True:
-        if num == 0:
-            break
+        self.current = None
+        self.before = None
 
-        if direction == 'D':
-            idx += 1
-        else:
-            idx -= 1
+        self.num_of_data = 0
 
-        if arr[idx] == 'X':
+    def append(self, data):
+        new_node = Node(data)
+        self.tail.next = new_node
+        self.tail = new_node
+        self.tail.prev = 
+
+        self.num_of_data += 1
+
+    def first(self):
+        if self.num_of_data == 0:
+            return None
+        
+        self.before = self.head
+        self.current = self.head.next
+
+    def next(self):
+        if self.current.next == None:
+            return None
+        
+        self.before = self.current
+        self.current = self.current.next
+
+    def before(self):
+        if self.before == self.head:
+            return None
+        
+        self.current = self.before
+        self.before = 
+
+    def select(self, dir, num):
+        if dir == 'U':
             pass
-        else:
-            selected = idx
-            num -= 1
 
-    return selected
+        if dir == 'D':
+            pass
 
+        pass
 
-def solution(n, k, cmd):
-    # 초기 상태
-    arr = ['O'] * n
-    selected = k
-    reverse = deque()
-
-    for c in cmd:
-        if c == 'C':
-            arr[selected] = 'X'
-            reverse.append(selected)
-
-            if selected == n - 1:
-                selected -= 1
-            else:
-                selected += 1
-
-        elif c == 'Z':
-            idx = reverse.pop()
-            arr[idx] = 'O'
-
-        else:
-            selected = cmd_trans(c, selected, arr)
-
-    answer = arr[0]
-    for i in arr[1:]:
-        answer += i
-    print(selected)
-    return answer
+    def delete(self):
+        pass
 
 
-print(solution(8, 2, ["D 2", "C", "U 3", "C", "D 4", "C", "U 2", "Z", "Z"]))
-print(solution(8, 0, ["C", "C", "C", "C",
-      "C", "C", "C", 'Z', 'Z', 'Z', 'U 1', 'C']))
-print(solution(8, 2, ["D 2", "C", "U 3", "C",
-      "D 4", "C", "U 2", "Z", "Z", "U 1", "C"]))
+link_list = Linkedlist()
+link_list.append(1)
+link_list.append(2)
+link_list.append(3)
+link_list.append(4)
+link_list.append(5)
+link_list.append(6)
+
+link_list.first()
+for _ in range(2):
+    link_list.next()
+
+print(link_list.current.data)
+
