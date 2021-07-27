@@ -10,6 +10,7 @@ class LinkedList:
     def __init__(self):
         self.head = Node('head')
         self.head.next = self.head
+
         self.current = self.head
         self.before = None
 
