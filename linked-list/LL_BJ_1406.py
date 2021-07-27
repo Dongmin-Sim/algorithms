@@ -26,6 +26,9 @@ class DLinked:
         pre.next = new_node
         self.tail.prev = new_node
 
+    def delete(self):
+        pass
+
     def select(self, dir):
         if dir == 'L':
             self.current = self.current.prev
