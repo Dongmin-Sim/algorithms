@@ -1,5 +1,6 @@
 '''
 문제 : 멀티탭 배정
+랭크 : 골드 1
 https://www.acmicpc.net/problem/1700
 '''
 import sys
