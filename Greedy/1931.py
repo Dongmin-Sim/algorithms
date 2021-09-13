@@ -1,6 +1,7 @@
 '''
 문제 : 회의실 배정
-https://www.acmicpc.net/problem/1931ㄴ
+랭크 : 실버 2
+https://www.acmicpc.net/problem/1931
 '''
 import sys
 
