@@ -8,7 +8,7 @@
 def cal_money(seller, amount):
     global parent_child
 
-    if seller == '-' or amount < 0:
+    if seller == '-' or amount <= 0:
         return
 
     if amount < 1:
@@ -32,10 +32,3 @@ def solution(enroll, referral, seller, amount):
         cal_money(s, a*100)
 
     return [values[1] for _, values in parent_child.items()]
-
-
-enroll, referral, seller, amount = ["john", "mary", "edward", "sam", "emily", "jaimie", "tod", "young"], [
-    "-", "-", "mary", "edward", "mary", "mary", "jaimie", "edward"], ["young", "john", "tod", "emily", "mary"], [12, 4, 2, 5, 10]
-
-
-print(solution(enroll, referral, seller, amount))
