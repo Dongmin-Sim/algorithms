@@ -11,9 +11,11 @@ def solution(n, start, end, roads, traps):
 
     for road in roads:
         node1, node2, cost = road[0], road[1], road[2]
+        # 정방향
         graph[node1].append((node2, cost, 1))
+        # 역방향
         graph[node2].append((node1, cost, 0))
-    print(graph)
+
     graph_status = True
 
     q = []
@@ -23,15 +25,12 @@ def solution(n, start, end, roads, traps):
 
     while q:
         dist, now = heapq.heappop(q)
-        print('now : ', now)
 
         # 방문한 노드가 trap 노드라면
         if now in traps:
             # graph_status는 바뀜
             graph_status = not graph_status
             visited[now] = False
-
-        print('now : ', now, 'graph_status : ', graph_status)
 
         for i in graph[now]:
             if i[2] == graph_status:
@@ -40,7 +39,6 @@ def solution(n, start, end, roads, traps):
                 # 여기서 오류
                 if cost < distance[i[0]]:
                     distance[i[0]] = cost
-
                     heapq.heappush(q, (cost, i[0]))
             else:
                 continue
